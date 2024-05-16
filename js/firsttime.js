@@ -9,9 +9,9 @@
 
 !function showGuide() {
     if (isFirstTime()) {
-        window.location.href = "";
+        window.location.href = "privacy-agreement.html";
     } else {
         console.log("这不是第一次访问了");
-        window.location.href = "index.html";
+        // window.location.href = "index.html";
     }
 }
