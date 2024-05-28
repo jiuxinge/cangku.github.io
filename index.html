@@ -42,7 +42,6 @@ https://www.tooplate.com/view/2127-little-fashion
                 <span class="sk-inner-circle"></span>
             </div>
         </section>
-
 	    <div id="updateLog">
             <h3>更新内容：</h3>
 		<p>①增加修复版优化模组下载页</p>
@@ -53,6 +52,27 @@ https://www.tooplate.com/view/2127-little-fashion
             	<button onclick="closeUpdateLog()">确定</button>
             	<button onclick="closeUpdateLog()">不再显示</button>
 	    </div>
+	<script type="text/javascript">
+        function showUpdateLog() {
+            var updateLog = document.getElementById("updateLog");
+            updateLog.style.display = "block";
+            setTimeout(function() {
+                updateLog.style.display = "none";
+            }, 5000);
+        }
+
+        function closeUpdateLog() {
+            var updateLog = document.getElementById("updateLog");
+            updateLog.style.display = "none";
+            localStorage.setItem("updateLogShown", "true");
+        }
+
+        window.onload = function() {
+            if (!localStorage.getItem("updateLogShown")) {
+                showUpdateLog();
+            }
+        }
+	</script>
 
         <main>
 
@@ -472,7 +492,6 @@ https://www.tooplate.com/view/2127-little-fashion
         <script src="js/slick.min.js"></script>
         <script src="js/custom.js"></script>
         <script src="js/firsttime.js"></script>
-        <script src="js/script.js"></script>
 
     </body>
 </html>
