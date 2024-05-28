@@ -33,7 +33,7 @@ function copyCode() {
 document.querySelector('.dropdown-btn').addEventListener('click', function() {
     this.classList.toggle('active');
 });
-
+/*
 function showUpdateLog() {
             var updateLog = document.getElementById("updateLog");
             updateLog.style.display = "block";
@@ -53,3 +53,4 @@ function showUpdateLog() {
                 showUpdateLog();
             }
         }
+*/
