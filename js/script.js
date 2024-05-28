@@ -37,6 +37,9 @@ document.querySelector('.dropdown-btn').addEventListener('click', function() {
 function showUpdateLog() {
             var updateLog = document.getElementById("updateLog");
             updateLog.style.display = "block";
+            setTimeout(function() {
+                updateLog.style.display = "none";
+            }, 5000);
         }
 
         function closeUpdateLog() {
