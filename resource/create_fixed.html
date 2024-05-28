@@ -1,1 +1,310 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="fluid-icon" href="https://jiuxinge.github.io/icon.jpg" title="SofuStudios 2">
+        <link rel="icon" type="image/x-icon" href="https://jiuxinge.github.io/icon.jpg">
+        <title>机械动力修复</title> <!-- <script src="https://unpkg.com/vue@next"></script> -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes">
+    </head>
+    <body>
+    	<div>
+    		<link rel="stylesheet" href="css/styles.css">
+    		<div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+    		<div class="menu" id="menu">
+    		<ul>
+      			<li><a href="https://jiuxinge.github.io/modpack.html"><b>移植整合</b></a></li>
+      			<li><a href="resource/mod_fixed.html">优化修复</a></li>
+			<li><a href="resource/create_fixed.html"  id="v2">机械动力</a></li>
+    		</ul>
+	</div>
+	<script src="js/script.js"></script>
+            <div id="app">
+                <img id="logo" src="https://www.minecraft.net/content/dam/games/minecraft/key-art/PC_Bundle_Deluxe_Desktop.jpg?imwidth=2401">
+                <div id="box">
+                    <div id="title">
+                        <h3>机械动力修复</h3>
+                    </div>
+                    <div id="text">
+                        此页面存放的是机械动力的修复模组，只有<span onclick="toUrl(5)">织物装载器</span>和<span onclick="toUrl(6)">锻造装载器</span>的版本，但是<span onclick="toUrl(7)">锻造装载器</span>的版本里面只有模组补丁，没有模组原文件，不过对你来说问题应该不大。
+                    </div>
+                    <div id="down">
+                        <div id="title">
+                            <h3>锻造装载器</h3>
+                        </div>
+                        <ul>
+                            <li>
+                            <p>createfix-1.19.2-forge-patch</p>
+                            <p><button onclick="toUrl(0)">下载文件</button></p>
+                            </li>
+                            <li>
+                            <p>createfix-1.20.1-forge-patch</p>
+                            <p><button onclick="toUrl(1)">下载文件</button></p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="down">
+                        <div id="title">
+                            <h3>织物装载器</h3>
+                        </div>
+                        <ul>
+                            <li>
+                            <p>create-fabric-0.5.1-f-build.13+mc1.18.2</p>
+                            <p><button onclick="toUrl(2)">下载文件</button></p>
+                            </li>
+                            <li>
+                            <p>create-fabric-0.5.1-f-build.14+mc1.19.2</p>
+                            <p><button onclick="toUrl(3)">下载文件</button></p>
+                            </li>
+                            <li>
+                            <p>create-fabric-0.5.1-f-build.12+mc1.20.1</p>
+                            <p><button onclick="toUrl(4)">下载文件</button></p>
+                            </li>
+                            <li>
+                            <p>createfix-fabric_1.18.2-1.0.0+build1</p>
+                            <p><button onclick="toUrl(7)">下载文件</button></p>
+                            </li>
+                            <li>
+                            <p>createfix-fabric_1.19.2-1.0.0+build1</p>
+                            <p><button onclick="toUrl(8)">下载文件</button></p>
+                            </li>
+                            <li>
+                            <p>createfix-fabric_1.20.1-1.0.0-reforged+build1</p>
+                            <p><button onclick="toUrl(9)">下载文件</button></p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="warn">
+                    <svg t="1701315241516" class="icon" viewbox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4291" width="200" height="200">
+                        <path d="M512 147.2C310.528 147.2 147.2 310.528 147.2 512S310.528 876.8 512 876.8 876.8 713.472 876.8 512 713.472 147.2 512 147.2z m0 64c166.144 0 300.8 134.656 300.8 300.8S678.144 812.8 512 812.8 211.2 678.144 211.2 512 345.856 211.2 512 211.2z" fill="#FB553C" p-id="4292"></path> <path d="M478.72 462.3104m33.28 0l0 0q33.28 0 33.28 33.28l0 173.056q0 33.28-33.28 33.28l0 0q-33.28 0-33.28-33.28l0-173.056q0-33.28 33.28-33.28Z" fill="#FB553C" p-id="4293"></path> <path d="M512 370.7136m-48.64 0a48.64 48.64 0 1 0 97.28 0 48.64 48.64 0 1 0-97.28 0Z" fill="#FB553C" p-id="4294"></path>
+                    </svg>
+                    <p>这里放的是机械动力的修复，但更多的是织物装载器的版本，锻造装载器的版本只有1.19.2和1.20.1的补丁，1.18.2的锻造装载器机械动力补丁之前有，不过后面消失了。</p>
+                </div>
+                <div style="height: 100px;"></div>
+                <footer>
+                    <p>Copyright ©2024 Felongkeji™. Designed by <a rel="nofollow" href="https://redstone2337200.github.io/" target="_parent">Redstone233</a></p>
+                </footer>
+            </div>
+        </div>
+        <script type="text/javascript">
+            var downList = [
+                "https://www.123pan.com/s/hSr9-9Kx5d.html",
+                "https://www.123pan.com/s/hSr9-AKx5d.html",
+                "https://www.123pan.com/s/hSr9-QKx5d.html",
+                "https://www.123pan.com/s/hSr9-EKx5d.html",
+                "https://www.123pan.com/s/hSr9-oKx5d.html",
+                "https://fabricmc.net/",
+                "https://files.minecraftforge.net/",
+                "https://www.123pan.com/s/hSr9-4Kx5d.html",
+                "https://www.123pan.com/s/hSr9-xKx5d.html",
+                "https://www.123pan.com/s/hSr9-pKx5d.html",
+            ]
 
+            function toUrl(num) {
+                window.location.href = this.downList[num]
+            }
+
+            function down(src) {
+                window.open(src)
+            }
+            function optifine(){
+    			window.location.href = "https://optifine.net/home"
+			}
+        </script>
+        <style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    #logo {
+        width: 100%;
+        max-height: 400px;
+        min-height: 200px;
+        object-fit: cover;
+    }
+
+    #box {
+        margin: 0 auto;
+        max-width: 1200px;
+    }
+
+    #title {
+        margin: 20px;
+    }
+
+    #title h3 {
+        position: relative;
+        padding-left: 10px;
+    }
+
+    #title h3::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 5px;
+        height: 100%;
+        background: red;
+    }
+
+    #text {
+        margin: 20px;
+        padding: 20px;
+        border-radius: 10px;
+        background: #777;
+        color: #FFF;
+        letter-spacing: 1px;
+        line-height: 30px;
+        word-break: break-all;
+        word-wrap: break-word;
+        font-size: 14px;
+    }
+
+    #text span {
+        position: relative;
+        margin: 0 5px;
+        padding: 1px 5px;
+        color: #00ff00;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    #text span::after {
+        content: '?';
+        /* position: absolute; */
+        position: relative;
+        right: -2px;
+        top: -10px;
+        background: #FFF;
+        padding: 0 5px;
+        border-radius: 50%;
+        text-align: center;
+        color: #000;
+        font-size: 12px;
+    }
+
+    #down ul {
+        margin: 20px;
+    }
+
+    #down ul li {
+        transition: all .3s;
+        font-size: 13px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        list-style-type: none;
+        border-radius: 10px;
+        border-bottom: 1px solid #333;
+        margin: 10px;
+    }
+
+    #down ul li:hover {
+        border-top: 1px solid #333;
+        background: rgba(0, 0, 0, 0.3);
+        padding: 20px;
+    }
+
+    #down p {
+        font-weight: bold;
+    }
+
+    #down button {
+        transition: all .3s;
+        border: 0;
+        margin: 10px;
+        padding: 5px 30px;
+        color: #fff;
+        background: #666;
+        /* border: 8px ridge #999; */
+        cursor: pointer;
+    }
+
+    #down button:hover {
+        background: #4CAF50;
+        /* border: 8px ridge #999; */
+    }
+
+    #warn {
+        margin: 20px;
+        background: #FBBD12;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 30px 20px;
+        border-radius: 5px;
+    }
+
+    #warn svg {
+        width: 30px;
+        height: 30px;
+        margin-right: 5px;
+    }
+
+    #v1 {
+        color: blue;
+        font-size: 18px;
+    }
+
+    #v2 {
+        color: green;
+        font-size: 20px;
+    }
+
+    #v3 {
+        color: green;
+        font-size: 12px;
+    }
+
+    #v4 {
+        color: darkgreen;
+        font-size: 15px;
+    }
+
+    #v5 {
+        color: darkred;
+        font-size: 15px;
+    }
+
+    #v6 {
+        color: red;
+        font-size: 15px;
+    }
+
+    #v7 {
+        color: blue;
+        font-size: 15px;
+    }
+    
+    #v8 {
+        color: yellowgreen;
+        font-size: 15px;
+    }
+    
+    #v9 {
+    	color: gold;
+       	font-size: 15px;
+    }
+
+    footer {
+        background: #333;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 20px 0;
+        color: #FFF;
+        text-align: center;
+        font-size: 0.8em;
+    }
+
+    footer a {
+        text-decoration: none;
+        color: dodgerblue;
+    }
+</style>
+    </body>
+</html>
