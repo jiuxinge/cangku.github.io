@@ -28,6 +28,27 @@
             <button onclick="closeUpdateLog()">确定</button>
             <button onclick="closeUpdateLog()">不再显示</button>
 	</div>
+	<script type="text/javascript">
+        function showUpdateLog() {
+            var updateLog = document.getElementById("updateLog");
+            updateLog.style.display = "block";
+            setTimeout(function() {
+                updateLog.style.display = "none";
+            }, 5000);
+        }
+
+        function closeUpdateLog() {
+            var updateLog = document.getElementById("updateLog");
+            updateLog.style.display = "none";
+            localStorage.setItem("updateLogShown", "true");
+        }
+
+        window.onload = function() {
+            if (!localStorage.getItem("updateLogShown")) {
+                showUpdateLog();
+            }
+        }
+	</script>
 	<script src="js/script.js"></script>
             <div id="app">
                 <img id="logo" src="https://www.minecraft.net/content/dam/games/minecraft/key-art/PC_Bundle_Deluxe_Desktop.jpg?imwidth=2401">
