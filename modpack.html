@@ -72,6 +72,19 @@
                 </footer>
             </div>
         </div>
+	    <div id="myModal" class="modal">
+  		<div class="modal-content">
+    		<span class="close">&times;</span>
+    		<p>
+		<p>更新内容：<br></p>
+		<p>①增加修复版优化模组下载页<br></p>
+		<p>②增加修复版机械动力模组下载页<br></p>
+		<p>③增加部分预览图片<br></p>
+		<p>④特殊页面增加预览图</p>
+		</p>
+    		<button id="confirmButton">确定</button>
+  	    </div>
+	    </div>
         <script type="text/javascript">
             var downList = [
                 "https://pan.quark.cn/s/22848625248e",
@@ -93,6 +106,50 @@
             function optifine(){
     			window.location.href = "https://optifine.net/home"
 			}
+
+	// 获取localStorage中的最后更新时间
+    const lastUpdated = localStorage.getItem('lastUpdated');
+
+    // 获取当前时间的字符串表示
+    const currentUpdated = new Date().toISOString();
+
+    // 检查是否有更新
+    if (!lastUpdated || lastUpdated < currentUpdated) {
+        localStorage.setItem('lastUpdated', currentUpdated);
+        showModal();
+    }
+
+    // 弹出模态框的函数
+    function showModal() {
+        document.getElementById('myModal').style.display = 'block';
+    }
+
+    // 关闭模态框的函数
+    function closeModal() {
+        document.getElementById('myModal').style.display = 'none';
+    }
+
+    // 获取关闭按钮
+    const closeButton = document.getElementsByClassName('close')[0];
+    const confirmButton = document.getElementById('confirmButton');
+
+    // 为关闭按钮添加点击事件
+    closeButton.onclick = function() {
+        closeModal();
+    }
+
+    // 为确定按钮添加点击事件
+    confirmButton.onclick = function() {
+        closeModal();
+    }
+
+    // 点击背景时也关闭模态框
+    window.onclick = function(event) {
+        let modal = document.getElementById('myModal');
+        if (event.target === modal) {
+            closeModal();
+        }
+    }	
         </script>
         <style>
     * {
