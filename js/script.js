@@ -33,3 +33,20 @@ function copyCode() {
 document.querySelector('.dropdown-btn').addEventListener('click', function() {
     this.classList.toggle('active');
 });
+
+function showUpdateLog() {
+            var updateLog = document.getElementById("updateLog");
+            updateLog.style.display = "block";
+        }
+
+        function closeUpdateLog() {
+            var updateLog = document.getElementById("updateLog");
+            updateLog.style.display = "none";
+            localStorage.setItem("updateLogShown", "true");
+        }
+
+        window.onload = function() {
+            if (!localStorage.getItem("updateLogShown")) {
+                showUpdateLog();
+            }
+        }
