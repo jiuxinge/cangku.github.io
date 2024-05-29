@@ -8,19 +8,17 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes">
     </head>
     <body>
-        <div>
-            <link rel="stylesheet" href="../css/styles.css">
-            <div>
-    		<link rel="stylesheet" href="css/styles.css">
-    		<div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
-    		<div class="menu" id="menu">
-    		<ul>
-      			<li><a href="https://jiuxinge.github.io/modpack.html"><b>移植整合</b></a></li>
-      			<li><a href="resource/mod_fixed.html" id="v2">优化修复</a></li>
-			<li><a href="resource/create_fixed.html">机械动力</a></li>
-    		</ul>
-		</div>
-	    </div>
+        <div class="navbar">
+		<link rel="stylesheet" href="../css/styles.css">
+  		<h1>Logo</h1>
+  		<div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+  		<ul class="nav-links">
+    		 <li><a href="https://jiuxinge.github.io/modpack.html">整合移植</a></li>
+    		 <li><a href="https://jiuxinge.github.io/resource/mod_fixed.html" id="v10">优化修复</a></li>
+    		 <li><a href="https://jiuxinge.github.io/resource/create_fixed.html">机械动力</a></li>
+    		 <li><a href="#">敬请期待</a></li>
+  		</ul>
+	</div>
             <script src="../js/script.js"></script>
             <div id="app"><img id="logo" src="https://www.minecraft.net/content/dam/games/minecraft/key-art/PC_Bundle_Deluxe_Desktop.jpg?imwidth=2401">
                 <div id="box">
@@ -315,6 +313,10 @@
     #v9 {
     	color: gold;
        	font-size: 15px;
+    }
+
+   #v10 {
+        color: gold;
     }
 
     footer {
