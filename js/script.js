@@ -1,4 +1,4 @@
-function toggleMenu() {
+function toggleMenu1() {
   var menu = document.getElementById("menu");
   if (menu.style.display === "none" || menu.style.display === "") {
     menu.style.display = "block";
@@ -33,24 +33,12 @@ function copyCode() {
 document.querySelector('.dropdown-btn').addEventListener('click', function() {
     this.classList.toggle('active');
 });
-/*
-function showUpdateLog() {
-            var updateLog = document.getElementById("updateLog");
-            updateLog.style.display = "block";
-            setTimeout(function() {
-                updateLog.style.display = "none";
-            }, 5000);
-        }
 
-        function closeUpdateLog() {
-            var updateLog = document.getElementById("updateLog");
-            updateLog.style.display = "none";
-            localStorage.setItem("updateLogShown", "true");
-        }
-
-        window.onload = function() {
-            if (!localStorage.getItem("updateLogShown")) {
-                showUpdateLog();
-            }
-        }
-*/
+function toggleMenu() {
+    var navLinks = document.querySelector('.nav-links');
+    if (navLinks.style.display === 'block') {
+      navLinks.style.display = 'none';
+    } else {
+      navLinks.style.display = 'block';
+    }
+}
