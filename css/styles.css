@@ -197,24 +197,24 @@
 	}
 
 .navbar {
-/*
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #333;
     color: white;
     padding: 10px;
-*/
+/*
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: transparent; /* Set the navbar to be transparent */
+    background-color: transparent; 
     color: blue;
     padding: 10px;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 1000;
+*/
   }
   .navbar h1 {
     margin: 0;
@@ -233,7 +233,8 @@
     margin-left: 20px;
   }
   .nav-links a {
-    color: blue;
+   /* color: blue;*/
+    color: white;
     text-decoration: none;
   }
   @media (max-width: 600px) {
