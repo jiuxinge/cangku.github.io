@@ -5,6 +5,10 @@
   height: 100vh;
 }
 
+#modpack {
+  font-size: 1em;
+}
+
 .menu-toggle {
   font-size: 30px;
   cursor: pointer;
